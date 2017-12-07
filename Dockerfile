@@ -1,4 +1,4 @@
-FROM centos:7
+FROM centos:6
 MAINTAINER jerrylee <kofttlcc@gmail.com>
 RUN yum -y update \
  && yum -y install wget; yum clean all
