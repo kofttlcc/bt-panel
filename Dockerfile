@@ -11,7 +11,6 @@ rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/sbin/init"]
-CMD ["sh","start.sh]
 MAINTAINER jerrylee <kofttlcc@gmail.com>
 RUN yum -y update \
  && yum -y install wget; yum clean all
